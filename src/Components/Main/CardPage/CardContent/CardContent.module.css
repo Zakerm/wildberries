@@ -1,0 +1,198 @@
+.card
+{
+    margin-bottom: 35px;
+}
+
+.card_link:hover .btn_more 
+{
+    opacity: 1;
+}
+
+
+.img
+{
+    position: relative;
+}
+
+.heart
+{
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
+    color: black;
+    overflow: hidden;
+    color: #a73afd;
+   
+    
+}
+
+.heart_icon
+{
+    
+}
+
+.img img
+{
+    position: relative;
+    border-radius: 12px;
+    background-color: #f6f6f9;
+    overflow: hidden;
+}
+
+.btn_more
+{
+    
+    white-space: nowrap;
+    padding: 8px;
+    width: calc(100% - 16px);
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    z-index: 4;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, .08);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: background-color .3s ease 0s;
+}
+
+.btn_more:hover
+{
+    background-color: #fff;
+}
+
+.btn_more a
+{
+    font-size: 16px;
+    line-height: 20px;
+    color: #242424;
+    margin-left: 12%;
+}
+
+.prise
+{
+    display: flex;
+    
+}
+
+.Wprise
+{
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 8px;
+    color: #a73afd;
+    font-weight: 700;
+}
+
+.well
+{
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 8px;
+    color: #a73afd;
+    font-weight: 700;
+    
+}
+
+.Nprise
+{
+    font-size: 14px;
+    line-height: 20px;
+    color: #868695;
+}
+
+.wallet
+{
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    color: #a73afd;
+    margin-bottom: 4px;
+    
+}
+
+.tittle
+{
+    display: flex;
+}
+
+.company
+{
+    color: #242424;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.product
+{
+    font-size: 14px;
+    line-height: 20px;
+    color: #9d9da5;
+    font-weight: 400;
+}
+
+.rating_all
+{
+    display: flex;
+}
+
+.icon
+{
+    margin-right: 3px;
+}
+
+.icon img
+{
+    width: 12px;
+    height: 12px;
+}
+
+.rating
+{
+    margin-right: 3px;
+  
+}
+
+.grade
+{
+    font-size: 14px;
+    line-height: 20px;
+    color: #9d9da5;
+    margin-left: 3px;
+}
+
+.card_buy_btn
+{
+    text-transform: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 3px 16px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #a73afd;
+    border: 2px solid transparent;
+    border-radius: 12px; 
+    margin-top: 12px;
+}
+
+
+
+.card_buy_btn:hover
+{
+    background-color: rgba(167, 58, 253, .9);
+}
+
+.btn 
+{
+    color: #fff;
+}

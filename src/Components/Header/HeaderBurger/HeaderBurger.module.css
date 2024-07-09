@@ -1,0 +1,240 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .HeaderBurger {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Оверлей */
+  .overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #242424;
+    opacity: 0.3 !important;
+    position: fixed;
+    z-index: 20;
+  }
+  
+  .overlay__menu_burger {
+    height: 100vh;
+    top: 114px;
+    position: absolute;
+    z-index: 19; /* уменьшил z-index, чтобы overlay был ниже submenu */
+    opacity: 0.5 !important;
+  }
+  
+  /* Основное меню */
+  .menu_burger {
+    display: flex;
+    height: 90%;
+    justify-content: flex-start;
+    width: auto;
+    max-width: 1223px;
+    top: 114px;
+    transform: translateX(-105%);
+    z-index: 100;
+    transition: transform 0.3s ease 0s;
+    position: absolute;
+  }
+  
+  .menu_burger__active {
+    transform: translateX(0);
+  }
+  
+  .menu_burger__main {
+    width: 312px;
+    height: 97%;
+    flex-shrink: 0;
+    background: #fff;
+    padding: 24px 0 24px 32px;
+    padding-right: 18px;
+    position: relative;
+    z-index: 101;
+    overflow-y: auto; /* Добавлено свойство overflow-y для скролла */
+}
+  
+  .menu_burger__main_list {
+    position: relative; /* Для позиционирования внутреннего содержимого */
+    width: 100%;
+    height: 100%; /* Занимаем всю доступную высоту */
+  }
+  
+  .menu_burger__main_list ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .menu_burger__main_list_item {
+    position: relative;
+  }
+  
+  .menu_burger__main_list_item__active .submenu {
+    display: block;
+    z-index: 104; /* установил высокий z-index для submenu */
+  }
+  
+  .menu_burger__main_list_link {
+    padding: 7px 12px 9px 48px;
+    border-radius: 8px;
+    margin: 0 -12px;
+    font-size: 16px;
+    color: #242424;
+    display: block;
+    position: relative;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  .menu_burger__main_list_link::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 12px;
+  }
+  
+  .menu_burger__main_list_item__active {
+    background-color: #f6f6f9;
+    color: #242424;
+    cursor: default;
+  }
+  
+  .menu_burger__main_list_link__1111 {
+    margin-bottom: 4px;
+    color: #fff;
+    font-weight: 600;
+    transition: opacity 0.3s ease 0s;
+    background: #000;
+  }
+  
+  .menu_burger__main_list_link__1111::before {
+    background: url("../../../icons/burger/blackFriday.svg");
+  }
+  
+  .menu_burger__main_list_link__1234::before {
+    background: url("../../../icons/burger/certificate.svg");
+  }
+  
+  .menu_burger__main_list_link__306::before {
+    background: url("../../../icons/burger/women.svg");
+  }
+  
+  .menu_burger__main_list_link__629::before {
+    background: url("../../../icons/burger/shoes.svg");
+  }
+  
+  .menu_burger__main_list_link__115::before {
+    background: url("../../../icons/burger/children.svg");
+  }
+  
+  .menu_burger__main_list_link__566::before {
+    background: url("../../../icons/burger/men.svg");
+  }
+  
+  .menu_burger__main_list_link__258::before {
+    background: url("../../../icons/burger/house.svg");
+  }
+  
+  .menu_burger__main_list_link__543::before {
+    background: url("../../../icons/burger/beauty.svg");
+  }
+  
+  .menu_burger__main_list_link__1::before {
+    background: url("../../../icons/burger/accessories.svg");
+  }
+  
+  .menu_burger__main_list_link__4830::before {
+    background: url("../../../icons/burger/electronics.svg");
+  }
+  
+  .menu_burger__main_list_link__481::before {
+    background: url("../../../icons/burger/toys.svg");
+  }
+  
+  .menu_burger__main_list_link__62827::before {
+    background: url("../../../icons/burger/furniture.svg");
+  }
+  
+  .menu_burger__main_list_link__62057::before {
+    background: url("../../../icons/burger/adults.svg");
+  }
+  
+  .menu_burger__main_list_link__10296::before {
+    background: url("../../../icons/burger/products.svg");
+  }
+  
+  .menu_burger__main_list_link__16107::before {
+    background: url("../../../icons/burger/appliances.svg");
+  }
+  
+  .menu_burger__main_list_link__6119::before {
+    background: url("../../../icons/burger/petSupplies.svg");
+  }
+  
+  .menu_burger__main_list_link__784::before {
+    background: url("../../../icons/burger/sport.svg");
+  }
+  
+  .menu_burger__main_list_link__6994::before {
+    background: url("../../../icons/burger/autoGoods.svg");
+  }
+  
+  .menu_burger__main_list_link__130624::before {
+    background: url("../../../icons/burger/transport.svg");
+  }
+  
+  .menu_burger__main_list_link__519::before {
+    background: url("../../../icons/burger/books.svg");
+  }
+  
+  .menu_burger__main_list_link__1023::before {
+    background: url("../../../icons/burger/jewelry.svg");
+  }
+  
+  .menu_burger__main_list_link__17006::before {
+    background: url("../../../icons/burger/repair.svg");
+  }
+  
+  .menu_burger__main_list_link__4863::before {
+    background: url("../../../icons/burger/garden.svg");
+  }
+  
+  .menu_burger__main_list_link__10326::before {
+    background: url("../../../icons/burger/health.svg");
+  }
+  
+  .menu_burger__main_list_link__5486::before {
+    background: url("../../../icons/burger/stationery.svg");
+  }
+  
+  .menu_burger__main_list_link__131111::before {
+    background: url("../../../icons/burger/culture.svg");
+  }
+  
+  .menu_burger__main_list_link__2192::before {
+    background: url("../../../icons/burger/stock.svg");
+  }
+  
+  .menu_burger__main_list_link__62813::before {
+    background: url("../../../icons/burger/digital.svg");
+  }
+  
+  .menu_burger__main_list_link__61037::before {
+    background: url("../../../icons/burger/travel.svg");
+  }
+  
+  

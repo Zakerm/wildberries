@@ -1,0 +1,239 @@
+.footer
+{
+    position: relative;
+    padding: 0 0 60px;
+    color: #fff;
+    background-color: #6311b5;
+    padding: 40px 0 80px;
+    flex: 0 0 auto;
+
+}
+
+.footer__nav {
+    display: flex;
+    margin: 0 -8px 40px;
+}
+
+.footer__service_wrap {
+    width: calc(100% - 2* 8px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__service_wrap {
+    position: relative;
+}
+
+.footer__service_wrap .footer__list_wrap {
+    padding: 0;
+}
+
+.footer__header_wrap {
+    cursor: default;
+}
+
+.footer__header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer__header {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+.footer__btn_open {
+    position: relative;
+    width: 28px;
+    height: 40px;
+    flex-shrink: 0;
+    font-size: 0;
+    margin-left: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+.footer__btn_open {
+    display: none;
+}
+
+.footer__item {
+    margin: 0 0 12px;
+    
+}
+
+.footer__item a {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, .7);
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+
+/* .footer__inner_wrap {
+    margin: 0 8px;
+    width: calc(29% - 2* 8px);
+} */
+
+.footer__inner_wrap .footer__list_wrap {
+    margin: 0;
+}
+
+
+.footer__inner_wrap .footer__list-wrap~.footer__list_wrap {
+    margin: 48px 0 0;
+}
+
+.footer__social_wrap {
+    flex-shrink: 0;
+}
+
+
+
+.footer__apps {
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 232px;
+}
+
+.footer_apps__img {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 136px;
+    height: auto;
+}
+
+.footer_apps__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, .6);
+    margin: 8px 0 16px;
+    text-align: center;
+}
+
+.footer_apps__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    width: 100%;
+}
+
+.footer_apps__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    line-height: 0;
+    transition: background-color .3s ease 0s;
+}
+
+.footer_apps__icon::before {
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.footer_apps__icon__ios::before
+{
+    width: 19px;
+    height: 23px;
+    background-image: url(..//../icons/footer/app.svg);
+}
+
+.footer_apps__icon__android:before
+{
+    width: 20px;
+    height: 22px;
+    background-image: url(..//../icons/footer/android.svg);
+}
+
+.footer_apps__icon__huawei {
+    background-color: #c8102e;
+    padding-bottom: 6px;
+    transition: background-color .3s ease 0s;
+}
+
+/* .footer_apps__icon__huawei:hover {
+    background-color: rgba(0, 0, 0, .4);
+} */
+
+.footer_apps__icon__huawei::before {
+    width: 30px;
+    height: 19px;
+    background-image: url(..//../icons/footer/hua.svg);
+}
+
+.footer_apps__icon__rustore::before {
+    width: 28px;
+    height: 29px;
+    background-image: url(..//../icons/footer/rustor.svg);
+}
+
+.footer_apps__icon:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.margin
+{
+    margin-top: 1000px;
+}
+
+
+.footer__copyrights {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, .6);
+    width: 100%;
+}
+
+.footer__link {
+    border-bottom: 1px solid;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, .6);
+    border-color: initial;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+    border-color: rgba(255, 255, 255, .6);
+    font-size: inherit;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.footer__item a:hover {
+    color: #fff;
+}
+
+@media (hover: hover) {
+    .footer__link:hover {
+        color: #fff;
+        border-color: #fff;
+    }
+}

@@ -1,0 +1,112 @@
+.headerTop
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.simple_menu
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* font-size: 0; */
+}
+
+/* .location
+{
+    display: flex;
+} */
+
+.text
+{
+    margin-right: 24px; 
+}
+
+.link
+{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, .6);
+    transition: color .3s ease 0s;
+    min-height: 20px;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+}
+
+.link:hover
+{
+    color: #fff;
+    border-color: initial;
+}
+
+/* .geo
+{
+    color: rgba(255, 255, 255, .6);
+} */
+
+.header__wrap {
+    display: flex;
+    gap: 8px;
+}
+
+.header__balance {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, .2);
+    padding: 0 4px 0 28px;
+    height: 20px;
+    border-radius: 4px 10px;
+    flex-shrink: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.wallet_icon
+{
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.simple_menu__item
+{
+    cursor: pointer;
+}
+
+.simple_menu__item:last-of-type {
+    margin-right: 0;
+}
+
+.header__currency {
+    padding: 0 4px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 8px;
+}
+
+.simple_menu__link__country {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.flag_ru {
+    background-size: contain;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+
+
+

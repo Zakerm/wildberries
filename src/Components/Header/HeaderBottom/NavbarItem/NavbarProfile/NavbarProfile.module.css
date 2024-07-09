@@ -1,0 +1,344 @@
+
+.tooltip_simple {
+    position: absolute;
+    z-index: 50;
+    cursor: default;
+    width: auto;
+    left: 51%;
+    transform: translateX(-50%);
+    padding-top: 12px;
+    top: 100%;
+    width: 312px;
+}
+
+.tooltip-profile {
+    width: 312px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateX(-204px);
+    z-index: 101;
+}
+
+.tooltip_simple .tooltip__content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.tooltip_profile .tooltip__content {
+    border-radius: 12px;
+}
+
+.tooltip_profile .tooltip__content {
+    padding: 20px;
+}
+
+.tooltip_simple .tooltip__content {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.tooltip_profile .profile_menu__user {
+    position: relative;
+}
+
+.tooltip_profile .profile_menu__details {
+    display: flex;
+    align-items: center;
+}
+
+.tooltip_profile .profile_menu__avatar {
+    flex-shrink: 0;
+    margin-right: 16px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile_menu__avatar
+{
+    width: 64px;
+    height: 64px;
+}
+
+.tooltip_profile .profile_menu__info {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 68px);
+}
+
+.tooltip_profile .profile_menu__name {
+    font-size: 16px;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: color .3s ease 0s;
+    color: #242424;
+    font-weight: 700;
+    max-width: calc(100% - 32px);
+    margin: 0 0 2px;
+}
+
+.tooltip_profile .profile_menu__phone {
+    font-size: 14px;
+    line-height: 20px;
+    color: #868695;
+}
+
+.tooltip_profile .profile_menu__notification {
+    display: block;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.tooltip_profile .profile_menu__notification::before {
+    --icon: url("../../../../../icons/profile/kolokol.svg")
+}
+
+.tooltip_profile .profile_menu__notification::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: var(--icon);
+    mask-image: var(--icon);
+    background-color: #242424;
+    transition: background-color .3s ease 0s;
+}
+
+.tooltip_profile .profile_menu__item {
+    padding: 20px 0;
+}
+
+.tooltip_profile .profile_menu__link {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #242424;
+    border-color: initial;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    transition: color .3s ease 0s;
+}
+
+.tooltip_profile .profile_menu__icon__purchase {
+    --icon: url("../../../../../icons/profile/purchase.svg");
+}
+
+.tooltip_profile .profile_menu__icon__purchase {
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: var(--icon);
+    mask-image: var(--icon);
+    background-color: #242424;
+}
+
+.tooltip_profile .profile_menu__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-right: 16px;
+    transition: background-color .3s ease 0s;
+}
+
+.tooltip_profile .profile_menu__link {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #242424;
+    border-color: initial;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    transition: color .3s ease 0s;
+}
+
+.tooltip_profile .profile_menu__sub__icons .profile_menu__sub_item~.profile_menu__sub_item {
+    margin-top: 16px;
+}
+
+.tooltip_profile .profile_menu__icon__heart {
+    --icon: url("../../../../../icons/profile/heart.svg");
+}
+
+.tooltip_profile .profile_menu__icon__heart  {
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: var(--icon);
+    mask-image: var(--icon);
+    background-color: #242424;
+}
+
+.tooltip_profile .profile_menu__icon__brand {
+    --icon: url("../../../../../icons/profile/brand.svg");
+}
+
+.tooltip_profile .profile_menu__icon__brand  {
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: var(--icon);
+    mask-image: var(--icon);
+    background-color: #242424;
+}
+
+.tooltip_profile .profile_menu__icon__box {
+    --icon: url("../../../../../icons/profile/box.svg");
+}
+
+.tooltip_profile .profile_menu__icon__box  {
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: var(--icon);
+    mask-image: var(--icon);
+    background-color: #242424;
+}
+
+.tooltip_profile .profile_menu__icon__wallet {
+    --icon: url("../../../../../icons/profile/wallet.svg");
+}
+
+.tooltip_profile .profile_menu__icon__wallet  {
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: var(--icon);
+    mask-image: var(--icon);
+    background-color: #242424;
+}
+
+.tooltip_profile .profile_menu__balance {
+    font-size: 16px;
+    line-height: 22px;
+    color: #868695;
+    margin-left: auto;
+}
+
+.tooltip_profile .profile_menu__icon__sale {
+    --icon: url("../../../../../icons/profile/sale.svg");
+}
+
+.tooltip_profile .profile_menu__icon__sale  {
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: var(--icon);
+    mask-image: var(--icon);
+    background-color: #242424;
+}
+
+.tooltip_profile .profile_menu__sale {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #a73afd;
+    margin-left: auto;
+}
+
+.tooltip_profile .profile_menu__icon__cards {
+    --icon: url("../../../../../icons/profile/cards.svg");
+}
+
+.tooltip_profile .profile_menu__icon__cards  {
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: var(--icon);
+    mask-image: var(--icon);
+    background-color: #242424;
+}
+
+.tooltip_profile .profile_menu__item~.profile_menu__item {
+    border-top: 1px solid #e8e8f0;
+}
+
+.tooltip_profile .profile_menu__sub_item~.profile_menu__sub_item {
+    margin-top: 12px;
+}
+
+.tooltip_profile .profile_menu__footer {
+    padding-top: 20px;
+    border-top: 1px solid #e8e8f0;
+}
+
+.tooltip_profile .profile_menu__details:hover .profile_menu__name {
+    color: #a73afd;
+}
+
+.tooltip_profile .profile_menu__link:hover {
+    color: #a73afd;
+    border-color: initial;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .tooltip_profile .profile_menu__link:hover .profile_menu__icon {
+        background-color: #a73afd;
+    }
+
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+    .tooltip_profile .profile_menu__notification:hover::before {
+        background-color: #a73afd
+    }
+}
+
+@media (hover: hover) and (pointer:fine) {
+    .tooltip_profile .profile_menu__notification:hover::before {
+        background-color:#a73afd;
+    }
+}
+
+
+
+
+
+
+
+
+
+

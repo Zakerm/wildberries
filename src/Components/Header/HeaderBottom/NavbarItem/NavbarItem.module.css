@@ -1,0 +1,78 @@
+.navbar_pc__item {
+    position: relative;
+    display: flex;
+}
+
+.navbar_pc__link {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, .6);
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    transition: color .3s ease 0s;
+    
+}
+
+.navbar_pc__link:hover
+{
+    color: #fff;
+}
+
+.navbar_pc__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 6px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.margin
+{
+    margin-left: 24px;
+}
+
+.navbar_pc__icon__delivery
+{
+    background-image: url("../../../../icons/NavbarItem/fax.svg")
+}
+
+.navbar_pc__icon__favorites
+{
+    background-image: url("../../../../icons/NavbarItem/heart.svg")
+}
+
+.navbar_pc__icon__profile
+{
+    background-image: url("../../../../icons/NavbarItem/profile.svg")
+}
+
+.navbar_pc__icon__cart
+{
+    background-image: url("../../../../icons/NavbarItem/cart.svg")
+}
+
+
+/*  */
+
+.navbar_pc__profileWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navbar_pc__tooltip {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    display: none;
+  }
+  
+  .navbar_pc__profileWrapper:hover .navbar_pc__tooltip {
+    display: block;
+  }
+  

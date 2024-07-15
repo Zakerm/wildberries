@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./HeaderBottom.module.css";
 import logo from "../../../icons/logo.svg";
 import HeaderSearch from "./HeaderSearch/HeaderSearch";
@@ -8,7 +8,14 @@ interface HeaderBottomProps {
   toggleBurgerMenu: () => void;
 }
 
-function HeaderBottom({ toggleBurgerMenu }: HeaderBottomProps) {
+const HeaderBottom: React.FC<HeaderBottomProps> = ({ toggleBurgerMenu }) => {
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+
+  const handleBurgerClick = () => {
+    setIsBurgerOpen(!isBurgerOpen);
+    toggleBurgerMenu();
+  };
+
   return (
     <div className={styles.header__bottom}>
       <div className={styles.nav_element}>
@@ -20,9 +27,11 @@ function HeaderBottom({ toggleBurgerMenu }: HeaderBottomProps) {
           <img src={logo} width="240" height="58" alt="Wildberries" />
         </a>
         <button
-          className={`${styles.nav_element__burger} ${styles.j_menu_burger_btn} ${styles.j_wba_header_item}`}
+          className={`${styles.nav_element__burger} ${
+            isBurgerOpen ? styles.open : ""
+          }`}
           type="button"
-          onClick={toggleBurgerMenu}
+          onClick={handleBurgerClick}
         >
           <span className={styles.nav_element__burger_line}></span>
         </button>
@@ -31,6 +40,6 @@ function HeaderBottom({ toggleBurgerMenu }: HeaderBottomProps) {
       <NavbarItem />
     </div>
   );
-}
+};
 
 export default HeaderBottom;

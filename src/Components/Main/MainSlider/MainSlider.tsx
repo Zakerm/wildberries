@@ -35,7 +35,7 @@ const CustomRightArrow: React.FC<CustomArrowProps> = ({ onClick }) => {
       onClick={onClick}
       className={`${styles.custom_arrow} ${styles.custom_arrow_right}`}
     >
-      <div className={styles.arrow}>→</div>
+      {/* <div className={styles.arrow}>→</div> */}
     </button>
   );
 };
@@ -46,7 +46,7 @@ const CustomLeftArrow: React.FC<CustomArrowProps> = ({ onClick }) => {
       onClick={onClick}
       className={`${styles.custom_arrow} ${styles.custom_arrow_left}`}
     >
-      <div className={styles.arrow}>←</div>
+      {/* <div className={styles.arrow}>←</div> */}
     </button>
   );
 };

@@ -9,7 +9,7 @@
   
   .submenu {
     /* display: none; */
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 16.2%; /* Отступ за пределами блока */
     width: 304px;
@@ -19,7 +19,7 @@
     border: 1px solid #ddd;
     padding: 24px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+    z-index: 100;
     top: 114px;
     overflow-y: auto;
 

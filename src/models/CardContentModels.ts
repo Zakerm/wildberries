@@ -11,4 +11,5 @@ export interface ICardContent{
     month?:string
     close?:string
     well?:string
+    popapImg?: string[],
 }

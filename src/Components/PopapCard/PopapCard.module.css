@@ -1,0 +1,119 @@
+/* Оверлей */
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #242424;
+    opacity: 0.3 !important;
+    position: fixed;
+    z-index: 20;
+  }
+  
+  .overlay__menu_burger {
+    height: 100vh;
+    top: 114px;
+    position: fixed;
+    z-index: 100; /* уменьшил z-index, чтобы overlay был ниже submenu */
+    opacity: 0.3 !important;
+  }
+
+  .popup {
+    font-size: 16px;
+    line-height: 22px;
+    color: #868695;
+    /* display: none; */
+    width: calc(100% - 32px);
+    /* max-width: 100%; */
+    min-width: 320px;
+    padding: 0;
+    position: absolute;
+    z-index: 1001;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    z-index: 301;
+    opacity: 1;
+    display: block;
+    top: 123.5px;
+    left: 464px;
+}
+
+.i_popup_same_part_kt {
+    /* padding: 0; */
+    max-width: 992px;
+    height: 660px;
+}
+
+.popup .close, .popup .popup__close {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    line-height: 1;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+
+.popup .close::before, .popup .popup__close::before {
+    width: 2px;
+    height: 20px;
+}
+
+.popup .close::after, .popup .close::before, .popup .popup__close::after, .popup .popup__close::before {
+    transition: background .3s ease 0s;
+    background-color: #9d9da5;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(0) rotate(45deg);
+}
+
+.popup .close::after, .popup .popup__close::after {
+    width: 20px;
+    height: 2px;
+}
+
+.popup .close::after, .popup .close::before, .popup .popup__close::after, .popup .popup__close::before {
+    transition: background .3s ease 0s;
+    background-color: #9d9da5;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(0) rotate(45deg);
+}
+
+ .product {
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.i_popup_same_part_kt .product__slider-wrap {
+    position: relative;
+    width: 512px;
+    flex-shrink: 0;
+    background-color: rgba(41, 43, 83, .03);
+}
+
+.product__slider_wrap
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+

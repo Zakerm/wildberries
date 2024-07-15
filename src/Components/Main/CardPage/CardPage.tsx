@@ -4,8 +4,7 @@ import CardContent from "../CardPage/CardContent/CardContent";
 import { ICardContent } from "../../../models/CardContentModels";
 import styles from "./CardPage.module.css";
 
-function CardPage() {
-  // Initialize topCards with data from CardContentD
+const CardPage: React.FC = () => {
   const topCards: ICardContent[] = CardContentD;
 
   return (
@@ -15,6 +14,6 @@ function CardPage() {
       ))}
     </div>
   );
-}
+};
 
 export default CardPage;

@@ -2,8 +2,7 @@ import React from "react";
 import { ICardContent } from "../../../../models/CardContentModels";
 import styles from "./CardContent.module.css";
 import star from "../../../../icons/star.svg";
-import { FaCartShopping } from "react-icons/fa6";
-import { FaRegHeart } from "react-icons/fa6";
+import { FaCartShopping, FaRegHeart } from "react-icons/fa6";
 
 interface CardContentProps {
   card: ICardContent;
@@ -34,7 +33,6 @@ const CardContent: React.FC<CardContentProps> = ({ card }) => {
             <div className={styles.wallet}>c WB кошельком</div>
             <div className={styles.tittle}>
               <div className={styles.company}>{card.company}</div>
-
               <div className={styles.product}>
                 <span>/</span> {card.product}
               </div>
@@ -45,18 +43,13 @@ const CardContent: React.FC<CardContentProps> = ({ card }) => {
               </div>
               <div className={styles.rating}>{card.rating}</div>
               <div className={styles.grade}>
-                {" "}
                 <span>●</span>
                 {card.grade}
               </div>
             </div>
           </div>
-
           <a className={styles.btn} href="#!">
-            <div className={styles.card_buy_btn}>
-              <FaCartShopping /> {card.date} {card.month}
-              {card.close}
-            </div>
+            <FaCartShopping className={styles.cart_icon} /> В корзину
           </a>
         </div>
       </a>

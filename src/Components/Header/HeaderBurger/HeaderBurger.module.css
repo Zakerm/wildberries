@@ -26,8 +26,8 @@
   .overlay__menu_burger {
     height: 100vh;
     top: 114px;
-    position: absolute;
-    z-index: 19; /* уменьшил z-index, чтобы overlay был ниже submenu */
+    position: fixed;
+    z-index: 100; /* уменьшил z-index, чтобы overlay был ниже submenu */
     opacity: 0.5 !important;
   }
   
@@ -42,7 +42,7 @@
     transform: translateX(-105%);
     z-index: 100;
     transition: transform 0.3s ease 0s;
-    position: absolute;
+    position: fixed;
   }
   
   .menu_burger__active {
@@ -95,6 +95,12 @@
     display: block;
     position: relative;
     -webkit-text-size-adjust: 100%;
+    
+  }
+
+  .menu_burger__main_list_link:hover
+  {
+    background-color: #f6f6f9;
   }
   
   .menu_burger__main_list_link::before {
@@ -108,9 +114,11 @@
   }
   
   .menu_burger__main_list_item__active {
-    background-color: #f6f6f9;
+    
     color: #242424;
     cursor: default;
+    border-radius: 8px;
+    
   }
   
   .menu_burger__main_list_link__1111 {
@@ -119,6 +127,7 @@
     font-weight: 600;
     transition: opacity 0.3s ease 0s;
     background: #000;
+    
   }
   
   .menu_burger__main_list_link__1111::before {
@@ -235,6 +244,14 @@
   
   .menu_burger__main_list_link__61037::before {
     background: url("../../../icons/burger/travel.svg");
+  }
+
+  .arrow
+  {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    font-size: 22px;
   }
   
   

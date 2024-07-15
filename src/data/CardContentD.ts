@@ -3,7 +3,7 @@ import { ICardContent } from '../models/CardContentModels';
 export const CardContentD: ICardContent[] =[
     {
         id:1,
-        img:"https://basket-12.wbbasket.ru/vol1710/part171035/171035757/images/c516x688/1.webp",
+        img:"https://basket-10.wbbasket.ru/vol1556/part155604/155604983/images/c516x688/1.webp",
         Wprise: 629,
         Nprise: 1799,
         company: "Inphic",
@@ -12,7 +12,8 @@ export const CardContentD: ICardContent[] =[
         grade: 1839,
         date: 7,
         month: "июля",
-        well: "₽"
+        well: "₽",
+        popapImg:["https://basket-04.wbbasket.ru/vol515/part51523/51523565/images/big/1.webp", "https://basket-04.wbbasket.ru/vol515/part51523/51523565/images/big/2.webp","https://basket-04.wbbasket.ru/vol515/part51523/51523565/images/big/3.webp", "https://basket-04.wbbasket.ru/vol515/part51523/51523565/images/big/4.webp"]
     },
     {
         id:2,

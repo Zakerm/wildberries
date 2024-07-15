@@ -1,6 +1,8 @@
 .header__bottom {
     display: flex;
     align-items: center;
+    
+    
 }
 
 .nav_element {
@@ -16,8 +18,7 @@
     height: 58px;
 }
 
-a
-{
+a {
     text-decoration: none;
 }
 
@@ -56,42 +57,43 @@ img {
     width: 26px;
     height: 3px;
     position: relative;
-    transition: background .3s ease 0s;
+    transition: all .3s ease;
     display: block;
     background: #fff;
     border-radius: 3px;
-    transform-origin: center left;
 }
 
-.nav_element__burger_line::after,.nav_element__burger_line::before {
+.nav_element__burger_line::before, .nav_element__burger_line::after {
     content: '';
     width: 100%;
     height: 100%;
     position: absolute;
     left: 0;
-    transform: rotate(0);
-    transition: transform .3s ease 0s;
+    transition: all .3s ease;
     display: block;
     background: #fff;
     border-radius: 3px;
-    transform-origin: center left
 }
 
 .nav_element__burger_line::before {
-    top: -9px
+    top: -9px;
 }
 
 .nav_element__burger_line::after {
-    bottom: -9px
+    bottom: -9px;
 }
 
-.nav_element__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 240px;
-    height: 58px
+/* Transformations for the open state */
+.open .nav_element__burger_line {
+    background-color: transparent;
 }
 
+.open .nav_element__burger_line::before {
+    transform: rotate(45deg);
+    top: 0;
+}
 
-
+.open .nav_element__burger_line::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}

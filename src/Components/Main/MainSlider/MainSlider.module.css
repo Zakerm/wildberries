@@ -5,6 +5,10 @@
     filter: brightness(80%);
 }
 
+.slider_wrapper:hover .custom_arrow {
+  opacity: 1;
+}
+
 
 .slider_wrapper {
     width: 100%;
@@ -34,7 +38,7 @@
     cursor: pointer;
     font-size: 20px;
     position: absolute;
-    top: 60%;
+    top: 50%;
     transform: translateY(-60%);
     border-radius: 50%;
     z-index: 2;
@@ -42,7 +46,14 @@
     width: 36px;
     height: 36px;
     transition: background-color 0.3s;
+    opacity: 0;
+    transition: background-color 0.3s, opacity 0.6s;
+   
   }
+
+
+
+  
   
   .custom_arrow_right {
     right: 1.5rem;
@@ -50,6 +61,34 @@
   
   .custom_arrow_left {
     left: 1.5rem;
+  }
+
+  .custom_arrow_left::before
+  {
+    transform: rotate(270deg);
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: block;
+    background-image: url(../../../icons/slider/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+
+
+  .custom_arrow_right::before
+  {
+    transform: rotate(90deg);
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: block;
+    background-image: url(../../../icons/slider/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   
 
@@ -97,5 +136,7 @@
   .custom_dot_list li.slick-active button {
     background: #ffffff; /* Active dot color */
   }
+
+  
 
   

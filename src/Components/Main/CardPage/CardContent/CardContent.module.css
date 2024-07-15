@@ -18,8 +18,8 @@
 {
     position: absolute;
     z-index: 2;
-    top: 5px;
-    right: 5px;
+    top: 7px;
+    right: 10px;
     font-size: 25px;
     color: black;
     overflow: hidden;

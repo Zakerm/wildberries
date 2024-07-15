@@ -7,6 +7,9 @@ import SubMenu from "./Components/Header/HeaderBurger/SubMenu/SubMenu";
 import Main from "./Components/Main/Main";
 import FastUp from "./Components/FastUp/FastUp";
 import FixedChat from "./Components/FixedChat/FixedChat";
+import PopapCard from "./Components/PopapCard/PopapCard";
+import { ICardContent } from "./models/CardContentModels";
+import Popap from "./Components/PopapCard/Popap";
 
 const menuItems = [
   {
@@ -573,7 +576,8 @@ const menuItems = [
   },
 ];
 
-function App() {
+const App: React.FC = () => {
+  const [selectedCard, setSelectedCard] = useState<ICardContent | null>(null);
   const [isBurgerVisible, setBurgerVisible] = useState(false);
   const [activeItemId, setActiveItemId] = useState<string | null>(null);
   const [isSubMenuVisible, setSubMenuVisible] = useState(true);
@@ -595,9 +599,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <Header toggleBurgerMenu={toggleBurgerMenu} />
-      </header>
+      <Header toggleBurgerMenu={toggleBurgerMenu} />
+      {/* <Popap /> */}
       <FastUp />
       <FixedChat />
       {isBurgerVisible && (
@@ -615,6 +618,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

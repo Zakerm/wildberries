@@ -3,7 +3,7 @@ import MainBanner from "./MainBanner/MainBanner";
 import MainSlider from "./MainSlider/MainSlider";
 import CardPage from "./CardPage/CardPage";
 
-function Main() {
+const Main: React.FC = () => {
   return (
     <div className="main_container">
       <MainBanner />
@@ -11,6 +11,6 @@ function Main() {
       <CardPage />
     </div>
   );
-}
+};
 
 export default Main;

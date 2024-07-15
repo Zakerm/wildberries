@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./HeaderBurger.module.css";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 interface HeaderBurgerProps {
   menuItems: Array<{
@@ -57,6 +58,9 @@ const HeaderBurger: React.FC<HeaderBurgerProps> = ({
                     }`}
                   >
                     {item.text}
+                    {activeItemId === item.id && (
+                      <MdOutlineKeyboardArrowRight className={styles.arrow} />
+                    )}
                   </span>
                 )}
               </li>
